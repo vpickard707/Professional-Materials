@@ -1,7 +1,7 @@
 Website: https://vpickard707.github.io/Professional-Materials/
 
 This project compiles professional materials to aid in job search for a coding student.
-Placeholder:
+Includes:
 
 - Updated Portfolio
 - Links to LinkedIn
