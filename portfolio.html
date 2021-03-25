@@ -1,65 +1,180 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio | Violet Pickard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/761c550c42.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Google Fonts Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Violet Pickard Portfolio</title>
 </head>
 
-<body background="assets/images/background.png">
-    <header>
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#!" class="brand-logo">Violet Pickard</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a target = "_blank" href="https://github.com/vpickard707">Github</a></li>
-                    <li><a target = "_blank" href="https://www.linkedin.com/in/violetpickard ">LinkedIn</a></li>
-                </ul>
-            </div>
+<body>
+        <script>document.body.classList.add('fade');</script>
+
+    <div class="wrapper bg-dark">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        
+            <a class="navbar-brand" href="index.html">Violet Pickard</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Bar items; collapsible for smaller screens -->
+                <div class="collapse navbar-collapse float-right" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+
         </nav>
 
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="index.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://github.com/vpickard707">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/violetpickard/">LinkedIn</a></li>
-        </ul>
-    </header>
+        <!-- Portfolio Section -->
+        <section class="images">
+            <div><h2 class= "title text-center display-5">Portfolio</h2><span class="sr-only">Portfolio Images</span></div>
+      
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card bg-dark border-dark" style="width: 32rem;">
+                            <img src="./assets/images/ruckus.jpg" class="card-img-top" alt="ruckus">
+                            <div class="card-body text-white bg-dark">
+                              <h5 class="card-title">Ruckus</h5>
+                              <p class="card-text">This group project is an application for music lovers to share videos and engage in a chat forum.</p>
+                              <br><br>
+                              <a href="https://ruckusproject2.herokuapp.com/"
+                                target="_blank" class="btn btn-secondary ctr">Visit the live page</a>
+                              <a href="https://github.com/vpickard707/Ruckus" target="_blank" class="btn btn-secondary"><i class="fab fa-github btn-icon"></i> Github Repository</a>
+                            </div>
+                        </div>
+                    </div>
 
-    <main>
-        <div id="main-container" class="container">
-            <section class="main-section">
-                <h1>Portfolio</h1>
-        </div>
-    </main>
-
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l3 s12">
-                    <div class="container">
-                        © 2020 Copyright Violet Pickard
+                    <div class="col-md-6">
+                        <div class="card bg-dark border-dark" style="width: 32rem;">
+                            <img src="./assets/images/dayplanner.jpg" class="card-img-top" alt="workday-scheduler">
+                            <div class="card-body text-white bg-dark">
+                                <h5 class="card-title">Work Day Planner</h5>
+                                <p class="card-text">A calendar application allows users to schedule their work day hourly from 9am to 5pm and save changes.</p>
+                                <a href="https://vpickard707.github.io/DayTripper/" target="_blank" class="btn btn-secondary">Visit the live page</a>
+                                <a href="https://github.com/vpickard707/DayTripper" target="_blank" class="btn btn-secondary"><i class="fab fa-github btn-icon"></i> Github Repository</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!--jquery CDN-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
+           
+            </section>
 
+            <section class="images">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-md-6">
+                                <div class="card bg-dark border-dark" style="width: 32rem;">
+                                    <img src="./assets/images/Eat-Da-Burger.png" style= "max-height: 315px" class="card-img-top" alt="note-taker-app">
+                                    <div class="card-body text-white bg-dark border-dark">
+                                        <h5 class="card-title border-dark">Weather Dashboard</h5>
+                                        <p class="card-text">This application uses an api to generate current weather and forecast information for a given area.</p>
+                                        <br>
+                                        <a href="https://vpickard707.github.io/Weather-Dash/" target="_blank" class="btn btn-secondary">Visit the live page</a>
+                                        <a href="https://github.com/vpickard707/Weather-Dash" target="_blank" class="btn btn-secondary"><i class="fab fa-github btn-icon"></i> Github Repository</a>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        <div></div>
+                        <div class="col-md-6">
+                            <div class="card bg-dark border-dark" style="width: 32rem;">
+                                <img src="./assets/images/fitness.jpg" class="card-img-top" alt="workday-scheduler">
+                                <div class="card-body text-white bg-dark">
+                                    <h5 class="card-title">Fitness Tracker</h5>
+                                    <p class="card-text">This application allows users to input and save their workout information including type of workout, duration, etc.</p>
+                                    <a href="https://dabestfitness.herokuapp.com/" target="_blank" class="btn btn-secondary">Visit the live page</a>
+                                    <a href="https://github.com/vpickard707/FitnessTracker" target="_blank" class="btn btn-secondary"><i class="fab fa-github btn-icon"></i> Github Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="images">
+                <div class="container">
+                    <div class="row">
+                            <div class="col-md-6">
+                                <div class="card bg-dark border-dark" style="width: 32rem;">
+                                    <img src="./assets/images/cookbook.jpg" style= "max-height: 315px" class="card-img-top" alt="note-taker-app">
+                                    <div class="card-body text-white bg-dark border-dark">
+                                    <h5 class="card-title border-dark">Cookbook</h5>
+                                    <p class="card-text">This group project allows users to search for recipes based on given ingredients.</p>
+                                    <a href="https://vpickard707.github.io/cookbook/" target="_blank" class="btn btn-secondary">Visit the live page</a>
+                                    <a href="https://github.com/vpickard707/cookbook" target="_blank" class="btn btn-secondary"><i class="fab fa-github btn-icon"></i> Github Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div></div>
+                        <div class="col-md-6">
+                            <div class="card bg-dark border-dark" style="width: 32rem;">
+                                <img src="./assets/images/Weather-Dashboard.jpg" class="card-img-top" alt="weather-dashboard">
+                                <div class="card-body text-white bg-dark">
+                                    <h5 class="card-title">Progressive Budget App</h5>
+                                    <p class="card-text">An app that allows users to log and chart their income/deductions over time and to work both online and offline.</p>
+                                    <br>
+                                    <a href="https://newpwstracker.herokuapp.com/" target="_blank" class="btn btn-secondary">Visit the live page</a>
+                                    <a href="https://github.com/vpickard707/Budget" target="_blank" class="btn btn-secondary"><i class="fab fa-github btn-icon"></i> Github Repository</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <div></div>
+
+        <!-- Footer -->
+        <footer id="sticky-footer" class="py-3 mt-auto bg-dark">
+            <div class="container text-right">
+              <small> Copyright &copy; <a href="contact.html">Violet Pickard</a></small>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(e) {
+          document.body.classList.remove('fade');
+        });
+      </script>
+</body>
 </html>
