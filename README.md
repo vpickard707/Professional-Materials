@@ -12,7 +12,7 @@ Includes:
 - Professional Resume
 - Sample coding projects
 
-![Screenshot of Portfolio](./assets/images/screenshot.jpg)
+![Screenshot of Portfolio](./assets/images/webpage.png)
 
 ## License
 
